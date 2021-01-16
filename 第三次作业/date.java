@@ -1,21 +1,21 @@
 import java.util.Date;
 public class date {
 
-	//è¾“å‡ºæ—¥æœŸçš„æ–¹æ³•
+	//Êä³öÈÕÆÚµÄ·½·¨
 	public static void printDate(long seconds, Date date) {
 		System.out.println(seconds + ": " + date.toString());
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	long seconds = 10000;//secondsä¸ºä»æ ¼æ—å¨æ²»æ—¶é—´1970å¹´1æœˆ1æ—¥èµ·ï¼Œæµé€çš„æ—¶é—´
-		int i=0;//ç”¨äºæ§åˆ¶å¾ªç¯
+	long seconds = 10000;//secondsÎª´Ó¸ñÁÖÍşÖÎÊ±¼ä1970Äê1ÔÂ1ÈÕÆğ£¬Á÷ÊÅµÄÊ±¼ä
+		int i=0;//ÓÃÓÚ¿ØÖÆÑ­»·
 		while(i<=7) {
 			Date date = new Date(seconds);
 			date.setTime(seconds);
 			printDate(seconds, date);
 			seconds =seconds*10;
-			i++;//é€šè¿‡å¾ªç¯è®¾ç½®æ–°çš„æµé€æ—¶é—´å¹¶æ˜¾ç¤ºæ—¥æœŸ
+			i++;//Í¨¹ıÑ­»·ÉèÖÃĞÂµÄÁ÷ÊÅÊ±¼ä²¢ÏÔÊ¾ÈÕÆÚ
 		}
 	}
 

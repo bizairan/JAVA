@@ -5,23 +5,23 @@ public class Acount {
 
 	public static void main(String[] args) {
 		Scanner in=new Scanner(System.in);
-		System.out.println("è¯·è¾“å…¥idï¼š");
+		System.out.println("ÇëÊäÈëid£º");
 		int id=in.nextInt();
-		System.out.println("è¯·è¾“å…¥é‡‘é¢ï¼š");
+		System.out.println("ÇëÊäÈë½ğ¶î£º");
 		double balance=in.nextDouble();
-		System.out.println("è¯·è¾“å…¥åˆ©ç‡ï¼š");
+		System.out.println("ÇëÊäÈëÀûÂÊ£º");
 		double rate=in.nextDouble();
-		System.out.println("è¯·è¾“å…¥å–æ¬¾é‡‘é¢ï¼š");
+		System.out.println("ÇëÊäÈëÈ¡¿î½ğ¶î£º");
 		double withdraw=in.nextDouble();
-		System.out.println("è¯·è¾“å…¥å­˜æ¬¾é‡‘é¢ï¼š");
+		System.out.println("ÇëÊäÈë´æ¿î½ğ¶î£º");
 		double deposit=in.nextDouble();
 		Account account = new Account(id,balance);
 		account.setAnnualInterestRate(rate);
 		account.withDraw(withdraw);
 		account.deposit(deposit);
-		System.out.println("è´¦æˆ·ä½™é¢: " + account.getBalance() + "\n"
-				+ "æœˆåˆ©æ¶¦: " + account.getMonthlyInterestRate() + "\n"
-				+ "åˆ›å»ºæ—¶é—´: " + account.getDateCreated());
+		System.out.println("ÕË»§Óà¶î: " + account.getBalance() + "\n"
+				+ "ÔÂÀûÈó: " + account.getMonthlyInterestRate() + "\n"
+				+ "´´½¨Ê±¼ä: " + account.getDateCreated());
 
 	}
 

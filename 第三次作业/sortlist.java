@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 public class sortlist{
-	//ä½¿ç”¨thiså…³é”®å­—å¼•ç”¨æ­£åœ¨è¢«æ„å»ºçš„å¯¹è±¡çš„æ•°æ®åŸŸ
+	//Ê¹ÓÃthis¹Ø¼ü×ÖÒıÓÃÕıÔÚ±»¹¹½¨µÄ¶ÔÏóµÄÊı¾İÓò
     ArrayList<Number> list;
     public sortlist(ArrayList<Number> list){
         this.list = list;
     }
-    //æ’åºæ–¹æ³•
+    //ÅÅĞò·½·¨
     public static void sort(ArrayList<Number> list){
-    	//å¦‚æœlisté•¿åº¦ä¸º0ï¼Œç›´æ¥return
+    	//Èç¹ûlist³¤¶ÈÎª0£¬Ö±½Óreturn
     	if (list.size()==0){
             return ;
         }
@@ -29,14 +29,14 @@ public class sortlist{
             }
         }
     }
-    //è¾“å‡ºlistæ–¹æ³•
+    //Êä³ölist·½·¨
     public static void printList(ArrayList<Number> list){
         for ( int i = 0; i < list.size(); i++){
             System.out.print(list.get(i) + " ");
         }
         System.out.println();
     }
-    //æµ‹è¯•ç¨‹åºåŠŸèƒ½
+    //²âÊÔ³ÌĞò¹¦ÄÜ
     public static void main(String [] args){
         Integer[] numbers = {9,8,7,6,5,4,3,2,1,0};
         ArrayList<Number> list = new ArrayList<>(Arrays.asList(numbers));
